@@ -18,39 +18,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <title>Animated count</title>
   </head>
-  <body class="flex flex-col justify-center">
-    <header>
-      <div class="container">
-        <h1>Animated Counter</h1>
+  <body
+    class="flex flex-col justify-center items-center w-full text-white h-[100vh]"
+  >
+    <header
+      class="flex flex-col w-full h-full justify-center block text-center items-center"
+    >
+      <div class="">
+        <h1 class="text-[60px]">Animated Counter</h1>
       </div>
     </header>
 
-    <section class="counters">
-      <div class="container">
+    <section
+      class="counters w-full bg-gray-300 border-t-[3px] border-t-blue-500 flex flex-row item-center justify-center gap-[30px] py-[60px] px-[20px]"
+    >
+      <div class="flex flex-col text-center">
         <i class="fab fa-youtube fa-4x"></i>
-        <div class="counter" data-target="1000">0</div>
+        <div class="counter text-[16px]" data-target="10000">0</div>
         <h3>subscribers</h3>
       </div>
-
-      <div class="container">
-        <i class="fab fa-youtube fa-4x"></i>
-        <div class="counter" data-target="1000">0</div>
-        <h3>subscribers</h3>
+      <div class="flex flex-col text-center">
+        <i class="fab fa-facebook fa-4x"></i>
+        <div class="counter text-[16px]" data-target="9000">0</div>
+        <h3>Friends</h3>
       </div>
-
-      <div class="container">
-        <i class="fab fa-youtube fa-4x"></i>
-        <div class="counter" data-target="1000">0</div>
-        <h3>subscribers</h3>
+      <div class="flex flex-col text-center">
+        <i class="fab fa-twitter fa-4x"></i>
+        <div class="counter text-[16px]" data-target="35000">0</div>
+        <h3>Friends</h3>
       </div>
-
-      <div class="container">
-        <i class="fab fa-youtube fa-4x"></i>
-        <div class="counter" data-target="1000">0</div>
-        <h3>subscribers</h3>
+      <div class="flex flex-col text-center">
+        <i class="fab fa-linkedin fa-4x"></i>
+        <div class="counter text-[16px]" data-target="35000">0</div>
+        <h3>Friends</h3>
       </div>
     </section>
   </body>
