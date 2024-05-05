@@ -14,16 +14,17 @@ body {
   align-items: center;
   height: 100vh;
   color: white;
-  background: aliceblue
-    url("https://img.freepik.com/free-photo/big-abstract-orange-bubbles-texture_23-2148205119.jpg?t=st=1714941503~exp=1714945103~hmac=21764b2700b601625142098f8b20344fb6b6dba0ea30fea931aae73f63bacc6e&w=996");
+  background: lightskyblue;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
 }
 
 .counters {
+  background: blue;
+  padding: 40px 20px;
   display: flex;
-  flex-direction: row;
+  border-top: 3px solid lightskyblue;
 }
 
 .container {
@@ -34,7 +35,17 @@ body {
 header {
   flex: 1;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+.counters .container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
